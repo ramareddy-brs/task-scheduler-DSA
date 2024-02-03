@@ -26,6 +26,20 @@
       <p class="text-start">
         This code uses an array taskCount to count the occurrences of each task. It then sorts the counts in descending order and calculates the idle slots based on the maximum count. Finally, it returns the total number of units needed, considering the idle slots
       </p>
+
+      <label for="tasksInput">Enter tasks (comma-separated): </label>
+      <input type="text" id="tasksInput" placeholder="A,A,A,B,B,B">
+
+      <br>
+
+      <label for="cooldownInput">Enter cooldown period (n): </label>
+      <input type="number" id="cooldownInput" placeholder="2">
+
+      <br>
+
+      <button onclick="calculateTime()">Calculate Time</button>
+
+      <div id="output"></div>
     </main>
 
     <footer class="footer footer-dark">
